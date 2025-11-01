@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<World MaxX="50" MaxY="50"/>
+	<Difficulty>Hard</Difficulty>
+</config>
