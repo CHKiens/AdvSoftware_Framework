@@ -39,5 +39,25 @@ namespace Mandatory2DGameFramework.logger
             ts.TraceEvent(TraceEventType.Critical, 0, message);
             ts.Flush();
         }
+
+        public void AddConsoleListener()
+        {
+            ts.Listeners.Add(new ConsoleTraceListener());
+        }
+
+        public void AddFileListener(string filePath)
+        {
+            ts.Listeners.Add(new TextWriterTraceListener(filePath));
+        }
+
+        public void AddXmlListener(string filePath)
+        {
+            ts.Listeners.Add(new XmlWriterTraceListener(filePath));
+        }
+
+        public void RemoveListener(TraceListener listener)
+        {
+            ts.Listeners.Remove(listener);
+        }
     }
 }
