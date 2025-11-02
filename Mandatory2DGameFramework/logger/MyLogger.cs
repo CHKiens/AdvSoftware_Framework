@@ -42,14 +42,12 @@ namespace Mandatory2DGameFramework.logger
             ts.Flush();
         }
 
-        public void AddFileListener(string filePath)
-        {
-            ts.Listeners.Add(new TextWriterTraceListener(filePath));
-        }
 
-        public void AddXmlListener(string filePath)
+        //Kunne argurmentere for at have en metode for hver type listener
+        //men det ville gøre klassen mindre fleksibel
+        public void AddListener(TraceListener listener)
         {
-            ts.Listeners.Add(new XmlWriterTraceListener(filePath));
+            ts.Listeners.Add(listener);
         }
 
         public void RemoveListener(TraceListener listener)
