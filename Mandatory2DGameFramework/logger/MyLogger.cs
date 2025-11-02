@@ -11,10 +11,12 @@ namespace Mandatory2DGameFramework.logger
     {
         private static readonly MyLogger instance = new MyLogger();
         public static MyLogger Instance { get { return instance; } }
-
-        private TraceSource ts = new TraceSource("GameLog");
-
-        private MyLogger() { }
+        private TraceSource ts;
+        private MyLogger() 
+        {
+            ts = new TraceSource("GameLog");
+            ts.Switch = new SourceSwitch("SourceSwitch", "All");
+        }
 
         public void LogInfo(string message)
         {
@@ -38,11 +40,6 @@ namespace Mandatory2DGameFramework.logger
         {
             ts.TraceEvent(TraceEventType.Critical, 0, message);
             ts.Flush();
-        }
-
-        public void AddConsoleListener()
-        {
-            ts.Listeners.Add(new ConsoleTraceListener());
         }
 
         public void AddFileListener(string filePath)
