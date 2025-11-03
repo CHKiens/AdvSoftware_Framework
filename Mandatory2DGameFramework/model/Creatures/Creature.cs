@@ -21,6 +21,7 @@ namespace Mandatory2DGameFramework.model.Creatures
         public string Name { get; set; }
         public int HitPoint { get; set; }
         public bool IsAlive { get; set; }
+        public int MoveRange { get; set; }
 
         public int PosX { get; set; }
         public int PosY { get; set; }

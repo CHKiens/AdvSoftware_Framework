@@ -11,7 +11,17 @@ namespace Mandatory2DGameFramework.model.Creatures
         public Warrior(string name, ILogger? logger = null) : base(logger)
         {
             Name = name;
+            HitPoint = 150;
+            MoveRange = 2;
             DamageStrategy = new ArmorPenDamageStrategy();
+
+            // Equip default attack weapon
+            AttackWeapon = new AttackItem
+            {
+                Name = "Sword",
+                Hit = 15,
+                Range = 1
+            };
         }
     }
 

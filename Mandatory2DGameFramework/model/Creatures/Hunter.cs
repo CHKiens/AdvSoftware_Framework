@@ -1,10 +1,9 @@
 ﻿using Mandatory2DGameFramework.logger;
+using Mandatory2DGameFramework.model.attack;
+using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.model.strategy;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Mandatory2DGameFramework.worlds;
+
 
 namespace Mandatory2DGameFramework.model.Creatures
 {
@@ -13,7 +12,17 @@ namespace Mandatory2DGameFramework.model.Creatures
         public Hunter(string name, ILogger? logger = null) : base(logger)
         {
             Name = name;
+            HitPoint = 90;
+            MoveRange = 4;
             DamageStrategy = new CritDamageStrategy();
+
+            // Equip default attack weapon
+            AttackWeapon = new AttackItem
+            {
+                Name = "Bow",
+                Hit = 10,
+                Range = 3,
+            };
         }
     }
 }
