@@ -9,12 +9,14 @@ namespace Mandatory2DGameFramework.model.Creatures
 {
     public class Hunter : Creature
     {
-        public Hunter(string name, ILogger? logger = null) : base(logger)
+        public Hunter(string name, int posX, int posY, ILogger? logger = null) : base(logger)
         {
             Name = name;
             HitPoint = 90;
             MoveRange = 4;
             DamageStrategy = new CritDamageStrategy();
+            PosX = posX;
+            PosY = posY;
 
             // Equip default attack weapon
             AttackWeapon = new AttackItem
