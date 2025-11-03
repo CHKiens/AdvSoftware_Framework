@@ -12,7 +12,7 @@ namespace Mandatory2DGameFramework.model.strategy
         public int CalculateDamage(Creature attacker, Creature target)
         {
             int baseDamage = attacker.AttackWeapon?.Hit ?? 2;
-            int targetDefence = target.DefenceItems.Sum(d => d.ReduceHitPoint);
+            int targetDefence = target.DefenceItems.ReduceHitPoint;
 
             // Warrior ignores 1/3 of total defence
             int reducedDefence = targetDefence - (targetDefence / 3);

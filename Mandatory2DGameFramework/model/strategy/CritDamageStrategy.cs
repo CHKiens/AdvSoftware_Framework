@@ -14,7 +14,7 @@ namespace Mandatory2DGameFramework.model.strategy
         public int CalculateDamage(Creature attacker, Creature target)
         {
             int baseDamage = attacker.AttackWeapon?.Hit ?? 2;
-            int totalDefence = target.DefenceItems.Sum(d => d.ReduceHitPoint);
+            int totalDefence = target.DefenceItems.ReduceHitPoint;
 
             // 25% chance to do double damage
             bool crit = _rng.NextDouble() < 0.25;
