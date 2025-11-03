@@ -15,6 +15,7 @@ namespace Mandatory2DGameFramework.model.defence
         {
             Name = string.Empty;
             ReduceHitPoint = 0;
+            Lootable = true;
         }
 
         public override string ToString()

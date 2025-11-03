@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace Mandatory2DGameFramework.logger
 {
-    public sealed class MyLogger
+    public sealed class MyLogger : ILogger
     {
         private static readonly MyLogger instance = new MyLogger();
         public static MyLogger Instance { get { return instance; } }
@@ -42,8 +42,7 @@ namespace Mandatory2DGameFramework.logger
             ts.Flush();
         }
 
-
-        //Kunne argurmentere for at have en metode for hver type listener
+        //Kunne argurmentere for at have en "add" metode for hver type listener
         //men det ville gøre klassen mindre fleksibel
         public void AddListener(TraceListener listener)
         {
