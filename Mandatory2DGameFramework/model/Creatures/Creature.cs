@@ -1,77 +1,127 @@
 ﻿using Mandatory2DGameFramework.logger;
 using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
+using Mandatory2DGameFramework.model.strategy;
 using Mandatory2DGameFramework.worlds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.model.Creatures
 {
+    /// <summary>
+    /// Abstract base class for all creatures in the game world.
+    /// Implements Template, Observer, and Damage Strategy patterns.
+    /// </summary>
     public abstract class Creature
     {
         private readonly ILogger? _logger;
+        private readonly List<ICreatureObserver> _observers = new List<ICreatureObserver>();
+
         public string Name { get; set; }
         public int HitPoint { get; set; }
-
-        public bool isAlive { get; set; }
+        public bool IsAlive { get; set; }
 
         public int PosX { get; set; }
         public int PosY { get; set; }
 
+        public AttackItem? AttackWeapon { get; set; }
+        public DefenceComposite DefenceItems { get; set; }
 
-        // Todo consider how many attack / defence weapons are allowed
-        public AttackItem?   Attack { get; set; }
-        public DefenceItem?  Defence { get; set; }
+        public IDamageStrategy? DamageStrategy { get; set; }
 
-        public Creature(ILogger? logger = null)
+        public const int MaxDefenceItems = 3;
+
+        protected Creature(ILogger? logger = null)
         {
             Name = string.Empty;
             HitPoint = 100;
-            isAlive = true;
+            IsAlive = true;
             _logger = logger;
-            Attack = null;
-            Defence = null;
-
+            AttackWeapon = null;
+            DefenceItems = new DefenceComposite();
         }
 
-        public int Hit()
+        #region Observer Pattern
+
+        public void Attach(ICreatureObserver observer)
         {
-            if (Attack != null)
-            {
-                return Attack.Hit;
-            }
-            else
-            {
-                return 1;  // Hit uden våben, sat til 1 som default
-            }
+            if (observer == null) throw new ArgumentNullException(nameof(observer));
+            if (!_observers.Contains(observer))
+                _observers.Add(observer);
         }
+
+        public void Detach(ICreatureObserver observer)
+        {
+            _observers.Remove(observer);
+        }
+
+        protected void NotifyObservers(CreatureHitEventArgs e)
+        {
+            foreach (var observer in _observers)
+                observer.OnCreatureHit(this, e);
+        }
+
+        #endregion
+
+        #region Template Method Pattern
+
+        public void PerformAttack(Creature target)
+        {
+            if (!CanAttack(target))
+            {
+                _logger?.LogWarning($"{Name} cannot attack {target.Name}");
+                return;
+            }
+
+            BeforeAttack();
+
+            int damage = DamageStrategy != null ? DamageStrategy.CalculateDamage(this, target) : Hit();
+            target.ReceiveHit(damage);
+
+            AfterAttack(target, damage);
+        }
+
+        protected virtual bool CanAttack(Creature target) => IsAlive && target.IsAlive;
+
+        protected virtual void BeforeAttack() => _logger?.LogInfo($"{Name} prepares to attack.");
+
+        protected virtual void AfterAttack(Creature target, int damage)
+            => _logger?.LogInfo($"{Name} dealt {damage} damage to {target.Name}.");
+
+        #endregion
+
+        public int Hit() => AttackWeapon?.Hit ?? 1;
 
         public void ReceiveHit(int hit)
         {
-            if (!isAlive)
+            if (!IsAlive)
             {
                 _logger?.LogWarning($"{Name} is already dead and cannot receive more hits.");
                 return;
             }
-            int reducedHit = hit;
-            if (Defence != null)
-            {
-                reducedHit -= Defence.ReduceHitPoint;
-            }
-            if (reducedHit < 0)
-            {
-                reducedHit = 0;
-            }
-            _logger?.LogInfo($"{Name} received hit of {reducedHit} points.");
+
+            int totalDefence = DefenceItems.ReduceHitPoint;
+            int reducedHit = Math.Max(0, hit - totalDefence);
+
+            int previousHP = HitPoint;
             HitPoint -= reducedHit;
+
+            NotifyObservers(new CreatureHitEventArgs
+            {
+                DamageReceived = reducedHit,
+                PreviousHitPoints = previousHP,
+                CurrentHitPoints = HitPoint,
+                IsDead = HitPoint <= 0
+            });
+
+            _logger?.LogInfo($"{Name} received hit of {reducedHit} points (reduced from {hit} by {totalDefence}).");
+
             if (HitPoint <= 0)
             {
                 HitPoint = 0;
-                isAlive = false;
-                _logger?.LogInfo($"{Name} is dead.");
+                IsAlive = false;
+                _logger?.LogInfo($"{Name} has died.");
             }
         }
 
@@ -85,20 +135,23 @@ namespace Mandatory2DGameFramework.model.Creatures
 
             if (obj is AttackItem attackItem)
             {
-                if (Attack != null)
-                {
-                    _logger?.LogInfo($"{Name} replaced attack item: {Attack.Name} with {attackItem.Name}.");
-                }
-                Attack = attackItem;
-                _logger?.LogInfo($"{Name} looted attack item: {attackItem.Name}.");
+                if (AttackWeapon != null)
+                    _logger?.LogInfo($"{Name} replaced weapon '{AttackWeapon.Name}' with '{attackItem.Name}'.");
+                else
+                    _logger?.LogInfo($"{Name} equipped weapon: {attackItem.Name}.");
+
+                AttackWeapon = attackItem;
             }
-
-
-
             else if (obj is DefenceItem defenceItem)
             {
-                Defence = defenceItem;
-                _logger?.LogInfo($"{Name} looted defence item: {defenceItem.Name}.");
+                if (DefenceItems.Items.Count >= MaxDefenceItems)
+                {
+                    _logger?.LogWarning($"{Name} cannot carry more defence items (max {MaxDefenceItems}).");
+                    return;
+                }
+
+                DefenceItems.Add(defenceItem);
+                _logger?.LogInfo($"{Name} equipped defence item: {defenceItem.Name} (Total defence: {DefenceItems.ReduceHitPoint}).");
             }
             else
             {
@@ -106,13 +159,14 @@ namespace Mandatory2DGameFramework.model.Creatures
             }
         }
 
-
-
-
-
         public override string ToString()
         {
-            return $"{{{nameof(Name)}={Name}, {nameof(HitPoint)}={HitPoint.ToString()}, {nameof(Attack)}={Attack}, {nameof(Defence)}={Defence}}}, {nameof(PosY)}={PosY}}}, {nameof(PosX)}={PosX}}}";
+            string weaponInfo = AttackWeapon != null ? AttackWeapon.Name : "None (bare hands)";
+            int totalDefence = DefenceItems.ReduceHitPoint;
+
+            return $"{Name} - HP: {HitPoint}, Position: ({PosX},{PosY}), " +
+                   $"Weapon: {weaponInfo}, Defence: {DefenceItems.Items.Count}/{MaxDefenceItems} (Total: {totalDefence}), " +
+                   $"Status: {(IsAlive ? "Alive" : "Dead")}";
         }
     }
 }

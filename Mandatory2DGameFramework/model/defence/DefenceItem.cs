@@ -9,7 +9,7 @@ namespace Mandatory2DGameFramework.model.defence
 {
     public class DefenceItem:WorldObject
     {
-        public int ReduceHitPoint { get; set; }
+        public virtual int ReduceHitPoint { get; set; }
 
         public DefenceItem()
         {

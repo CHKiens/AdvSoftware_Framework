@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.factory
 {
-    public static class GameObjectFactory
+    public abstract class GameObjectFactory
     {
         public static Creature CreateWarrior(ILogger? logger = null)
         {
