@@ -15,6 +15,7 @@ namespace Mandatory2DGameFramework.factory
 {
     public abstract class GameObjectFactory
     {
+        //Ændre til brug af interface i stedet for konkrete klasser
         public Creature CreateWarrior(string name, int posx, int posy, ILogger? logger)
         {
             return new Warrior(name, posx, posy, logger);
@@ -29,5 +30,7 @@ namespace Mandatory2DGameFramework.factory
         {
             return new Wall(posx, posy);
         }
+
+
     }
 }
