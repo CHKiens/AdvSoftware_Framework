@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,6 +29,18 @@ namespace Mandatory2DGameFramework.worlds
             _creatures = new List<Creature>();
         }
 
+
+        public void AddWorldObject(WorldObject obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            _worldObjects.Add(obj);
+        }
+
+        public void AddCreature(Creature creature)
+        {
+            if (creature == null) throw new ArgumentNullException(nameof(creature));
+            _creatures.Add(creature);
+        }
         public override string ToString()
         {
             return $"{{{nameof(MaxX)}={MaxX.ToString()}, {nameof(MaxY)}={MaxY.ToString()}, {nameof(Difficulty)}}}";
