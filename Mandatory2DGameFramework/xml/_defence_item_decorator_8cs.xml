@@ -3,7 +3,6 @@
   <compounddef id="_defence_item_decorator_8cs" kind="file" language="C#">
     <compoundname>DefenceItemDecorator.cs</compoundname>
     <innerclass refid="class_defence_decorator" prot="public">DefenceDecorator</innerclass>
-    <innernamespace refid="namespace_system_1_1_xml_1_1_linq">System::Xml::Linq</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -182,6 +182,7 @@
 <parametername>logger</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Optional logger</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -212,6 +213,7 @@
 <parametername>observer</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Observer to attach</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -240,6 +242,7 @@
 <parametername>observer</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Observer to detach</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -260,7 +263,7 @@
 <para>Gets the current hit points of the creature. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para></para>
+<para><simplesect kind="return"><para>Current creature hitpoints</para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -279,7 +282,7 @@
 <para>Gets whether the creature is alive. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para></para>
+<para><simplesect kind="return"><para>IsAlive = true or false</para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -413,6 +416,7 @@
 <parametername>e</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>Event argurments</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -441,6 +445,7 @@
 <parametername>delta</parametername>
 </parameternamelist>
 <parameterdescription>
+<para>The amount of hitpoints to adjust by</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

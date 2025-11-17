@@ -1,4 +1,5 @@
 ﻿using Mandatory2DGameFramework.logger;
+using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.Creatures;
 using Mandatory2DGameFramework.model.defence;
 using Mandatory2DGameFramework.model.wall;
@@ -23,6 +24,9 @@ namespace Mandatory2DGameFramework.factory
         public static WorldObject CreateWall(int y, int x) => new Wall(y, x);
         public static DefenceItem CreateDefence(string name, int reduce) =>
             new DefenceItem { Name = name, ReduceHitPoint = reduce };
+        public static AttackItem CreateAttack(string name, int damage) =>
+            new AttackItem { Name = name, Hit = damage };
+
         public static Creature CreateCreature(
         CreatureType type,
         string name,

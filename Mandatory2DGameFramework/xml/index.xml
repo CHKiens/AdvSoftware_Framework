@@ -210,6 +210,8 @@
   </compound>
   <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
   </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography_1_1_x509_certificates" kind="namespace"><name>System::Security::Cryptography::X509Certificates</name>
+  </compound>
   <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
   </compound>
   <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
