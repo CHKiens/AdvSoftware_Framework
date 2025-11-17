@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::strategy::IDamageStrategy</compoundname>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.strategy.ArmorPenDamageStrategy</derivedcompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.strategy.CritDamageStrategy</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy_1a75c26a833daf8d04ca20c420ad26f804" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.strategy.IDamageStrategy.CalculateDamage</definition>
+        <argsstring>(Creature attacker, Creature target)</argsstring>
+        <name>CalculateDamage</name>
+        <qualifiedname>Mandatory2DGameFramework.model.strategy.IDamageStrategy.CalculateDamage</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy_1a23a1bf8c0c3636538bf7d3eed17c147c">CalculateDamage</reimplementedby>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy_1a83d469e15348de7cd919f3f89cb7f8af">CalculateDamage</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/IDamageStrategy.cs" line="12" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.strategy.IDamageStrategy</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy"/>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.strategy.ArmorPenDamageStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.strategy.CritDamageStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/IDamageStrategy.cs" line="10" column="22" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/IDamageStrategy.cs" bodystart="11" bodyend="13"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy_1a75c26a833daf8d04ca20c420ad26f804" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::strategy::IDamageStrategy</scope><name>CalculateDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

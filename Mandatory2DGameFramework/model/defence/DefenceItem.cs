@@ -1,13 +1,9 @@
 ﻿using Mandatory2DGameFramework.worlds;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.model.defence
 {
-    public class DefenceItem:WorldObject
+    public class DefenceItem : WorldObject
     {
         public virtual int ReduceHitPoint { get; set; }
 
@@ -20,7 +16,7 @@ namespace Mandatory2DGameFramework.model.defence
 
         public override string ToString()
         {
-            return $"{{{nameof(Name)}={Name}, {nameof(ReduceHitPoint)}={ReduceHitPoint.ToString()}}}";
+            return $"{{Name={Name}, ReduceHitPoint={ReduceHitPoint}}}";
         }
     }
 }

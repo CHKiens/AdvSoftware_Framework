@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1worlds_1_1_world" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::worlds::World</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.World.MaxX</definition>
+        <argsstring></argsstring>
+        <name>MaxX</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.MaxX</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="9" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.worlds.World.MaxY</definition>
+        <argsstring></argsstring>
+        <name>MaxY</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.MaxY</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="10" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a9e0aee69da075dce1597ccc26609c853" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.worlds.World.Difficulty</definition>
+        <argsstring></argsstring>
+        <name>Difficulty</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.Difficulty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="11" column="23" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ab28a30212e96824089a1f0a87582e1ce" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IReadOnlyList&lt; <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> &gt;</type>
+        <definition>IReadOnlyList&lt;WorldObject&gt; Mandatory2DGameFramework.worlds.World.WorldObjects</definition>
+        <argsstring></argsstring>
+        <name>WorldObjects</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.WorldObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="16" column="30" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a475a64df0bdac36560d0e92d840f3610" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IReadOnlyList&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
+        <definition>IReadOnlyList&lt;Creature&gt; Mandatory2DGameFramework.worlds.World.Creatures</definition>
+        <argsstring></argsstring>
+        <name>Creatures</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.Creatures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="17" column="30" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8ca075702f2a470c7e3f8a41ebeaf81c" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref> &gt;</type>
+        <definition>readonly List&lt;WorldObject&gt; Mandatory2DGameFramework.worlds.World._worldObjects</definition>
+        <argsstring></argsstring>
+        <name>_worldObjects</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World._worldObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="13" column="31" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a837d56970137e4516d4c38dec0b215ed" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref> &gt;</type>
+        <definition>readonly List&lt;Creature&gt; Mandatory2DGameFramework.worlds.World._creatures</definition>
+        <argsstring></argsstring>
+        <name>_creatures</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World._creatures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="14" column="31" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a093237e7016dd272769c90523679a3d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.worlds.World.World</definition>
+        <argsstring>(int maxX, int maxY, string difficulty)</argsstring>
+        <name>World</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.World</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>maxX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxY</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>difficulty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="19" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="19" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.AddCreature</definition>
+        <argsstring>(Creature creature)</argsstring>
+        <name>AddCreature</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.AddCreature</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <briefdescription>
+<para>Adds a creature to the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="31" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a282902ed941f110a15d0bf8939799153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.worlds.World.AddWorldObject</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>AddWorldObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.AddWorldObject</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Adds a world object to the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="40" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a9baeee07865c6ffd2bd74fd34b6d03d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.worlds.World.RemoveWorldObject</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>RemoveWorldObject</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.RemoveWorldObject</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Removes a world object from the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="49" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.worlds.World.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.worlds.World.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="55" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="55" bodyend="59"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" line="7" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/worlds/World.cs" bodystart="8" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a837d56970137e4516d4c38dec0b215ed" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_creatures</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a8ca075702f2a470c7e3f8a41ebeaf81c" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>_worldObjects</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a565918c3a734b0e67208ca627a599ec3" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>AddCreature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a282902ed941f110a15d0bf8939799153" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>AddWorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a475a64df0bdac36560d0e92d840f3610" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>Creatures</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a9e0aee69da075dce1597ccc26609c853" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>Difficulty</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0b1ad1e842a47530036cb945367b8465" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>MaxX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a448ca41211652392fcc724b3f06427d7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>MaxY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a9baeee07865c6ffd2bd74fd34b6d03d4" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>RemoveWorldObject</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a0058e208eaf3f7e2fb61e25b66730914" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1a093237e7016dd272769c90523679a3d9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>World</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_1ab28a30212e96824089a1f0a87582e1ce" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::worlds::World</scope><name>WorldObjects</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

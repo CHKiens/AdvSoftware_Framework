@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_armor_pen_damage_strategy_8cs" kind="file" language="C#">
+    <compoundname>ArmorPenDamageStrategy.cs</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy" prot="public">Mandatory2DGameFramework::model::strategy::ArmorPenDamageStrategy</innerclass>
+    <innernamespace refid="namespace_mandatory2_d_game_framework">Mandatory2DGameFramework</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model">Mandatory2DGameFramework::model</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy">Mandatory2DGameFramework::model::strategy</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1_creatures" kindref="compound">Mandatory2DGameFramework.model.Creatures</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy" kindref="compound">Mandatory2DGameFramework.model.strategy</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy" kindref="compound">ArmorPenDamageStrategy</ref><sp/>:<sp/><ref refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy" kindref="compound">IDamageStrategy</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CalculateDamage(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref><sp/>attacker,<sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref><sp/>target)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>baseDamage<sp/>=<sp/>attacker.<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" kindref="member">Inventory</ref>.EquippedWeapon?.Hit<sp/>??<sp/>2;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>targetDefence<sp/>=<sp/>target.<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" kindref="member">Inventory</ref>.Defence.ReduceHitPoint;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Ignore<sp/>1/3<sp/>of<sp/>total<sp/>defence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reducedDefence<sp/>=<sp/>targetDefence<sp/>-<sp/>(targetDefence<sp/>/<sp/>3);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>finalDamage<sp/>=<sp/>Math.Max(0,<sp/>baseDamage<sp/>-<sp/>reducedDefence);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>finalDamage;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/ArmorPenDamageStrategy.cs"/>
+  </compounddef>
+</doxygen>

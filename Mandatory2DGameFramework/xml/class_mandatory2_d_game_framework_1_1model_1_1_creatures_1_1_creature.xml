@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Mandatory2DGameFramework::model::Creatures::Creature</compoundname>
+    <basecompoundref refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.Creatures.ICreature</basecompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.Creatures.Hunter</derivedcompoundref>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_warrior" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.Creatures.Warrior</derivedcompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a3fd4fadd61884093adf95b746c2b0b8f" prot="private" static="no" mutable="no">
+        <type>readonly? <ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>readonly? ILogger Mandatory2DGameFramework.model.Creatures.Creature._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature._logger</qualifiedname>
+        <briefdescription>
+<para>Abstract base class representing a creature in the game world. A creature can attack, receive damage and loot objects. Implements the Observer pattern to notify subscribers when hit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="17" column="34" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acbd386572993ee2c06a67bb4cefdab66" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer" kindref="compound">ICreatureObserver</ref> &gt;</type>
+        <definition>readonly List&lt;ICreatureObserver&gt; Mandatory2DGameFramework.model.Creatures.Creature._observers</definition>
+        <argsstring></argsstring>
+        <name>_observers</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature._observers</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="18" column="31" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.model.Creatures.Creature.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Name</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8a5ae90679e5cf8ff6693cd7c788c96f">Name</reimplements>
+        <briefdescription>
+<para><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref>&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="23" column="23" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a9155a6f10739249a394e6aaeef622494" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.Creature.HitPoint</definition>
+        <argsstring></argsstring>
+        <name>HitPoint</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.HitPoint</qualifiedname>
+        <briefdescription>
+<para>Current hit points of the creature. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="28" column="23" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ab08f108166082081801976a072fbe306" prot="protected" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.model.Creatures.Creature.IsAlive</definition>
+        <argsstring></argsstring>
+        <name>IsAlive</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.IsAlive</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Indicates if the creature is alive. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="33" column="24" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1add39c38e08c0eb69424e78cb36e77478" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.Creature.MoveRange</definition>
+        <argsstring></argsstring>
+        <name>MoveRange</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.MoveRange</qualifiedname>
+        <briefdescription>
+<para>How far the creature can move per turn. (movement not really implemented). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="38" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a56e83a2b515348d4f22694de7ede0d71" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.Creature.PosX</definition>
+        <argsstring></argsstring>
+        <name>PosX</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.PosX</qualifiedname>
+        <briefdescription>
+<para>X-coordinate in the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="44" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a09d99023b4df8c89b5fe66d6346ca4f6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.Creature.PosY</definition>
+        <argsstring></argsstring>
+        <name>PosY</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.PosY</qualifiedname>
+        <briefdescription>
+<para>Y-coordinate in the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="49" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ace944c56499bb397677cfd2c530d4aa7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component" kindref="compound">CombatComponent</ref></type>
+        <definition>CombatComponent Mandatory2DGameFramework.model.Creatures.Creature.Combat</definition>
+        <argsstring></argsstring>
+        <name>Combat</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Combat</qualifiedname>
+        <briefdescription>
+<para>Component handling combat logic (attacks and receiving damage). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="55" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component" kindref="compound">InventoryComponent</ref></type>
+        <definition>InventoryComponent Mandatory2DGameFramework.model.Creatures.Creature.Inventory</definition>
+        <argsstring></argsstring>
+        <name>Inventory</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Inventory</qualifiedname>
+        <briefdescription>
+<para>Component handling inventory (weapons, defence items, looting). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="60" column="35" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a2c69e9e641cfef176f79f5a9592cd0f1" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.Creatures.Creature.Creature</definition>
+        <argsstring>(ILogger? logger=null)</argsstring>
+        <name>Creature</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Creature</qualifiedname>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?</type>
+          <declname>logger</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="66" column="19" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="66" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ae542a025f21adc870a33a11849067699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.Attach</definition>
+        <argsstring>(ICreatureObserver observer)</argsstring>
+        <name>Attach</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Attach</qualifiedname>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer" kindref="compound">ICreatureObserver</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+<para>Attaches an observer to the creature to receive hit notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="77" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a8a18342162b892b51449f6028cdd7ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.Detach</definition>
+        <argsstring>(ICreatureObserver observer)</argsstring>
+        <name>Detach</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Detach</qualifiedname>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer" kindref="compound">ICreatureObserver</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+<para>Detaches an observer from the creature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="83" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a7817576b589ac5f095995c23ca0e860a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.Creature.GetCurrentHitPoints</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentHitPoints</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.GetCurrentHitPoints</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a650bc6616d011ce343a034cb926cc87f">GetCurrentHitPoints</reimplements>
+        <briefdescription>
+<para>Gets the current hit points of the creature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="99" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1af4855a1faf0bce7e30c87580207874cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.model.Creatures.Creature.GetIsAlive</definition>
+        <argsstring>()</argsstring>
+        <name>GetIsAlive</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.GetIsAlive</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1abecca701fdbd3e1b147d1f5b8e49d851">GetIsAlive</reimplements>
+        <briefdescription>
+<para>Gets whether the creature is alive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="105" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acb636a7ca612b5ad53ee333f99b6d646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.PerformAttack</definition>
+        <argsstring>(Creature target)</argsstring>
+        <name>PerformAttack</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.PerformAttack</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8b3c8412df937d93b9b9ec65d6717f43">PerformAttack</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a2c69e9e641cfef176f79f5a9592cd0f1" kindref="member">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Performs an attack on the target creature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="136" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a98466b10649ea373e391de8ddba81ca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.ReceiveHit</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>ReceiveHit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.ReceiveHit</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a9459659d4adb03bdb040b2a61a3c5830">ReceiveHit</reimplements>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Receives a hit with the specified damage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="141" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a47e1a4402967f3116f3cae07d6beb9d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.Loot</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>Loot</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.Loot</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1ac2389dc27140651b63540c2ab792189b">Loot</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Loots the specified world object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="147" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a45be34786ef3833ecafe9f62d2066fd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.model.Creatures.Creature.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.ToString</qualifiedname>
+        <briefdescription>
+<para>Returns a string representation of the creature. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="153" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="153" bodyend="157"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ad8d417c0fbb21894991893fff266b1fb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.NotifyObservers</definition>
+        <argsstring>(CreatureHitEventArgs e)</argsstring>
+        <name>NotifyObservers</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.NotifyObservers</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_hit_event_args" kindref="compound">CreatureHitEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Notifies all attached observers about a hit event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="89" column="23" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a3b7219073f795f12e8ae5af173567f66" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.Creature.AdjustHitPoints</definition>
+        <argsstring>(int delta)</argsstring>
+        <name>AdjustHitPoints</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Creature.AdjustHitPoints</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+<para>Adjusts the hit points of the creature by the specified delta. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="111" column="23" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="111" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.Creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.Creatures.Hunter</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.Creatures.ICreature</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature"/>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.model.Creatures.Warrior</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_warrior"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.Creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.Creatures.ICreature</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" line="10" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Creature.cs" bodystart="11" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a3fd4fadd61884093adf95b746c2b0b8f" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>_logger</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acbd386572993ee2c06a67bb4cefdab66" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>_observers</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a3b7219073f795f12e8ae5af173567f66" prot="package" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>AdjustHitPoints</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ae542a025f21adc870a33a11849067699" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Attach</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ace944c56499bb397677cfd2c530d4aa7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Combat</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a2c69e9e641cfef176f79f5a9592cd0f1" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Creature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a8a18342162b892b51449f6028cdd7ec6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Detach</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a7817576b589ac5f095995c23ca0e860a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>GetCurrentHitPoints</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1af4855a1faf0bce7e30c87580207874cf" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>GetIsAlive</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a9155a6f10739249a394e6aaeef622494" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>HitPoint</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Inventory</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ab08f108166082081801976a072fbe306" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>IsAlive</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a47e1a4402967f3116f3cae07d6beb9d0" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Loot</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1add39c38e08c0eb69424e78cb36e77478" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>MoveRange</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ad8d417c0fbb21894991893fff266b1fb" prot="package" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>NotifyObservers</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acb636a7ca612b5ad53ee333f99b6d646" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>PerformAttack</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a56e83a2b515348d4f22694de7ede0d71" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>PosX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a09d99023b4df8c89b5fe66d6346ca4f6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>PosY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a98466b10649ea373e391de8ddba81ca7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>ReceiveHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a45be34786ef3833ecafe9f62d2066fd6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Creature</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_mandatory2_d_game_framework_1_1model" kind="namespace" language="C#">
+    <compoundname>Mandatory2DGameFramework::model</compoundname>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1attack">Mandatory2DGameFramework::model::attack</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1components">Mandatory2DGameFramework::model::components</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1_creatures">Mandatory2DGameFramework::model::Creatures</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1defence">Mandatory2DGameFramework::model::defence</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy">Mandatory2DGameFramework::model::strategy</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1wall">Mandatory2DGameFramework::model::wall</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

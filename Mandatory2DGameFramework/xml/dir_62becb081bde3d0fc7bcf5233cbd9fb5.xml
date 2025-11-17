@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_62becb081bde3d0fc7bcf5233cbd9fb5" kind="dir">
+    <compoundname>C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components</compoundname>
+    <innerfile refid="_combat_component_8cs">CombatComponent.cs</innerfile>
+    <innerfile refid="_inventory_component_8cs">InventoryComponent.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/"/>
+  </compounddef>
+</doxygen>

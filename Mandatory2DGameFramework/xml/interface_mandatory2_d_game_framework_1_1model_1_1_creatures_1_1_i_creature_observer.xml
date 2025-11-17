@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::Creatures::ICreatureObserver</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer_1a5167c0a4345ed0c80d1c0c3eab9a50a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.ICreatureObserver.OnCreatureHit</definition>
+        <argsstring>(Creature creature, CreatureHitEventArgs e)</argsstring>
+        <name>OnCreatureHit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreatureObserver.OnCreatureHit</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>creature</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_hit_event_args" kindref="compound">CreatureHitEventArgs</ref></type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Called whenever a creature receives a hit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>creature</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creature that was hit.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event arguments describing the hit.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreatureObserver.cs" line="19" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Observer interface for creatures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreatureObserver.cs" line="12" column="22" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreatureObserver.cs" bodystart="13" bodyend="20"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_observer_1a5167c0a4345ed0c80d1c0c3eab9a50a4" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreatureObserver</scope><name>OnCreatureHit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

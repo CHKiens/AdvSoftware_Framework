@@ -1,9 +1,6 @@
 ﻿using Mandatory2DGameFramework.model.Creatures;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.worlds
 {
@@ -11,13 +8,13 @@ namespace Mandatory2DGameFramework.worlds
     {
         public int MaxX { get; set; }
         public int MaxY { get; set; }
-
         public string Difficulty { get; set; }
 
-        // world objects
-        private List<WorldObject> _worldObjects;
-        // world creatures
-        private List<Creature> _creatures;
+        private readonly List<WorldObject> _worldObjects;
+        private readonly List<Creature> _creatures;
+
+        public IReadOnlyList<WorldObject> WorldObjects => _worldObjects.AsReadOnly();
+        public IReadOnlyList<Creature> Creatures => _creatures.AsReadOnly();
 
         public World(int maxX, int maxY, string difficulty)
         {
@@ -28,9 +25,37 @@ namespace Mandatory2DGameFramework.worlds
             _creatures = new List<Creature>();
         }
 
+        /// <summary>
+        /// Adds a creature to the world
+        /// </summary>
+        public void AddCreature(Creature creature)
+        {
+            if (creature == null) throw new ArgumentNullException(nameof(creature));
+            _creatures.Add(creature);
+        }
+
+        /// <summary>
+        /// Adds a world object to the world
+        /// </summary>
+        public void AddWorldObject(WorldObject obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            _worldObjects.Add(obj);
+        }
+
+        /// <summary>
+        /// Removes a world object from the world
+        /// </summary>
+        public bool RemoveWorldObject(WorldObject obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            return _worldObjects.Remove(obj);
+        }
+
         public override string ToString()
         {
-            return $"{{{nameof(MaxX)}={MaxX.ToString()}, {nameof(MaxY)}={MaxY.ToString()}, {nameof(Difficulty)}}}";
+            return $"World: MaxX={MaxX}, MaxY={MaxY}, Difficulty={Difficulty}, " +
+                   $"Creatures={_creatures.Count}, Objects={_worldObjects.Count}";
         }
     }
 }

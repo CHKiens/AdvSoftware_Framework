@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::Creatures::ICreature</compoundname>
+    <derivedcompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.Creatures.Creature</derivedcompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8a5ae90679e5cf8ff6693cd7c788c96f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.model.Creatures.ICreature.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.Name</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0">Name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="12" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a650bc6616d011ce343a034cb926cc87f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.Creatures.ICreature.GetCurrentHitPoints</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentHitPoints</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.GetCurrentHitPoints</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a7817576b589ac5f095995c23ca0e860a">GetCurrentHitPoints</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="13" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1abecca701fdbd3e1b147d1f5b8e49d851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.model.Creatures.ICreature.GetIsAlive</definition>
+        <argsstring>()</argsstring>
+        <name>GetIsAlive</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.GetIsAlive</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1af4855a1faf0bce7e30c87580207874cf">GetIsAlive</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="14" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8b3c8412df937d93b9b9ec65d6717f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.ICreature.PerformAttack</definition>
+        <argsstring>(Creature target)</argsstring>
+        <name>PerformAttack</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.PerformAttack</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acb636a7ca612b5ad53ee333f99b6d646">PerformAttack</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a9459659d4adb03bdb040b2a61a3c5830" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.ICreature.ReceiveHit</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>ReceiveHit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.ReceiveHit</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a98466b10649ea373e391de8ddba81ca7">ReceiveHit</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="16" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1ac2389dc27140651b63540c2ab792189b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.Creatures.ICreature.Loot</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>Loot</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.ICreature.Loot</qualifiedname>
+        <reimplementedby refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a47e1a4402967f3116f3cae07d6beb9d0">Loot</reimplementedby>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="17" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.Creatures.ICreature</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature"/>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.Creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.Creatures.Hunter</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Mandatory2DGameFramework.model.Creatures.Warrior</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_warrior"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" line="10" column="22" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/ICreature.cs" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a650bc6616d011ce343a034cb926cc87f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>GetCurrentHitPoints</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1abecca701fdbd3e1b147d1f5b8e49d851" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>GetIsAlive</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1ac2389dc27140651b63540c2ab792189b" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>Loot</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8a5ae90679e5cf8ff6693cd7c788c96f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>Name</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a8b3c8412df937d93b9b9ec65d6717f43" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>PerformAttack</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature_1a9459659d4adb03bdb040b2a61a3c5830" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::ICreature</scope><name>ReceiveHit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_defence_decorator" kind="class" language="C#" prot="public">
+    <compoundname>DefenceDecorator</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.defence.DefenceItem</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_defence_decorator_1adcef3a000d853a288b709c4aba6a5ebf" prot="protected" static="no" mutable="no">
+        <type>readonly DefenceItem</type>
+        <definition>readonly DefenceItem DefenceDecorator._inner</definition>
+        <argsstring></argsstring>
+        <name>_inner</name>
+        <qualifiedname>DefenceDecorator._inner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" line="6" column="36" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_defence_decorator_1aa242b721e7eb47c089f0a9f15c306caa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int DefenceDecorator.Bonus</definition>
+        <argsstring></argsstring>
+        <name>Bonus</name>
+        <qualifiedname>DefenceDecorator.Bonus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" line="7" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_defence_decorator_1a3803de3b3b07f82c3982729629f67159" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>override int</type>
+        <definition>override int DefenceDecorator.ReduceHitPoint</definition>
+        <argsstring></argsstring>
+        <name>ReduceHitPoint</name>
+        <qualifiedname>DefenceDecorator.ReduceHitPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" line="17" column="25" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_defence_decorator_1ab3d4bafb16b4f72646c38b607998c954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DefenceDecorator.DefenceDecorator</definition>
+        <argsstring>(DefenceItem inner, int bonus)</argsstring>
+        <name>DefenceDecorator</name>
+        <qualifiedname>DefenceDecorator.DefenceDecorator</qualifiedname>
+        <param>
+          <type>DefenceItem</type>
+          <declname>inner</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bonus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" line="9" column="12" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" bodystart="9" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>DefenceDecorator</label>
+        <link refid="class_defence_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.defence.DefenceItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>DefenceDecorator</label>
+        <link refid="class_defence_decorator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>_inner</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.defence.DefenceItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" line="4" column="7" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceItemDecorator.cs" bodystart="5" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_defence_decorator_1adcef3a000d853a288b709c4aba6a5ebf" prot="protected" virt="non-virtual"><scope>DefenceDecorator</scope><name>_inner</name></member>
+      <member refid="class_defence_decorator_1aa242b721e7eb47c089f0a9f15c306caa" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>Bonus</name></member>
+      <member refid="class_defence_decorator_1ab3d4bafb16b4f72646c38b607998c954" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>DefenceDecorator</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a2800a3024565901b5ceaf248890c09fa" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>DefenceItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f0369090bb647e08721f019f1ab54ed" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>posX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8e02ad604695417f0312e26982549ef9" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>posY</name></member>
+      <member refid="class_defence_decorator_1a3803de3b3b07f82c3982729629f67159" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>ReduceHitPoint</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1abca7cfd24dc84cd0a7ba83538abfc888" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>Removeable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item_1a7b9c7ace396b732ddbecdf138fb2b0ea" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>DefenceDecorator</scope><name>WorldObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

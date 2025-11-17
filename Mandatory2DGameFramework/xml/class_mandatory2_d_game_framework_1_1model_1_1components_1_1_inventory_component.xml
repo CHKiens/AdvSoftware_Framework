@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::components::InventoryComponent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a734d3c67f954ddfe2a4907da56a55cc5" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+        <definition>readonly Creature Mandatory2DGameFramework.model.components.InventoryComponent._owner</definition>
+        <argsstring></argsstring>
+        <name>_owner</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent._owner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="20" column="35" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1ab0c55a1d77c6a9dbc1eb0b6ff7d9e5f8" prot="private" static="no" mutable="no">
+        <type>readonly? <ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>readonly? ILogger Mandatory2DGameFramework.model.components.InventoryComponent._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="21" column="34" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1ac6d67a1059600c7e5a060b2bfe4c767f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref>?</type>
+        <definition>AttackItem? Mandatory2DGameFramework.model.components.InventoryComponent.EquippedWeapon</definition>
+        <argsstring></argsstring>
+        <name>EquippedWeapon</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent.EquippedWeapon</qualifiedname>
+        <briefdescription>
+<para>The currently equipped weapon. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="26" column="27" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a934259f344b0cff135f81d9180c87c0c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kindref="compound">DefenceComposite</ref></type>
+        <definition>DefenceComposite Mandatory2DGameFramework.model.components.InventoryComponent.Defence</definition>
+        <argsstring></argsstring>
+        <name>Defence</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent.Defence</qualifiedname>
+        <briefdescription>
+<para>The currently equipped defensive items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="31" column="33" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a7b9b2255ad3af9584072727c372881b5" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Mandatory2DGameFramework.model.components.InventoryComponent.MaxDefenceItems</definition>
+        <argsstring></argsstring>
+        <name>MaxDefenceItems</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent.MaxDefenceItems</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>The maximum number of defensive items a creature can equip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="36" column="26" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a02ab5f440db2caa37db2bb173c01cea2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.components.InventoryComponent.InventoryComponent</definition>
+        <argsstring>(Creature owner, ILogger? logger=null)</argsstring>
+        <name>InventoryComponent</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent.InventoryComponent</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?</type>
+          <declname>logger</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Initializes a new instance of the <ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component" kindref="compound">InventoryComponent</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref> - owner of the inventory</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional logger</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="43" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a73cd244dff30955030d1b67ccadaf3ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.components.InventoryComponent.Loot</definition>
+        <argsstring>(WorldObject obj)</argsstring>
+        <name>Loot</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.InventoryComponent.Loot</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Loots a world object, equipping it if possible. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object to loot</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="54" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="54" bodyend="79"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handles a creatures inventory - equipped weapons and defensive items. Supports looting objects from the world. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" line="18" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/InventoryComponent.cs" bodystart="19" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1ab0c55a1d77c6a9dbc1eb0b6ff7d9e5f8" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>_logger</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a734d3c67f954ddfe2a4907da56a55cc5" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>_owner</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a934259f344b0cff135f81d9180c87c0c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>Defence</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1ac6d67a1059600c7e5a060b2bfe4c767f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>EquippedWeapon</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a02ab5f440db2caa37db2bb173c01cea2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>InventoryComponent</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a73cd244dff30955030d1b67ccadaf3ee" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>Loot</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_inventory_component_1a7b9b2255ad3af9584072727c372881b5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::InventoryComponent</scope><name>MaxDefenceItems</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

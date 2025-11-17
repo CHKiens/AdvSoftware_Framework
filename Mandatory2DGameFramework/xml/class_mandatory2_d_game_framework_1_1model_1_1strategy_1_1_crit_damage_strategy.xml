@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::strategy::CritDamageStrategy</compoundname>
+    <basecompoundref refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.strategy.IDamageStrategy</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy_1afe47486f6ba02593f3a1cd3d6369e09d" prot="private" static="no" mutable="no">
+        <type>readonly Random</type>
+        <definition>readonly Random Mandatory2DGameFramework.model.strategy.CritDamageStrategy._rng</definition>
+        <argsstring></argsstring>
+        <name>_rng</name>
+        <qualifiedname>Mandatory2DGameFramework.model.strategy.CritDamageStrategy._rng</qualifiedname>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" line="8" column="33" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy_1a83d469e15348de7cd919f3f89cb7f8af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.strategy.CritDamageStrategy.CalculateDamage</definition>
+        <argsstring>(Creature attacker, Creature target)</argsstring>
+        <name>CalculateDamage</name>
+        <qualifiedname>Mandatory2DGameFramework.model.strategy.CritDamageStrategy.CalculateDamage</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy_1a75c26a833daf8d04ca20c420ad26f804">CalculateDamage</reimplements>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>attacker</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" line="10" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" bodystart="10" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.strategy.CritDamageStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.strategy.IDamageStrategy</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.strategy.CritDamageStrategy</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.strategy.IDamageStrategy</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" line="6" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/CritDamageStrategy.cs" bodystart="7" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy_1afe47486f6ba02593f3a1cd3d6369e09d" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::strategy::CritDamageStrategy</scope><name>_rng</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_crit_damage_strategy_1a83d469e15348de7cd919f3f89cb7f8af" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::strategy::CritDamageStrategy</scope><name>CalculateDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

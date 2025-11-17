@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::attack::AttackItem</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" prot="public" virt="non-virtual">Mandatory2DGameFramework.worlds.WorldObject</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a79f3a79c5f6fe0abb97774b058607fba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.attack.AttackItem.Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.Hit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="12" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a993c8584493e0b9219fce3bacca19750" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.attack.AttackItem.Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.Range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="13" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</definition>
+        <argsstring>()</argsstring>
+        <name>AttackItem</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.AttackItem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="15" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a39c14499449be8d78fbe387811b7a13f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.model.attack.AttackItem.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.AttackItem.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="23" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.attack.AttackItem</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" line="10" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/AttackItem.cs" bodystart="11" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a8245758c94a8503111611dde2c38f916" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>AttackItem</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a79f3a79c5f6fe0abb97774b058607fba" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Hit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f0369090bb647e08721f019f1ab54ed" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>posX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8e02ad604695417f0312e26982549ef9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>posY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a993c8584493e0b9219fce3bacca19750" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Range</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1abca7cfd24dc84cd0a7ba83538abfc888" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>Removeable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item_1a39c14499449be8d78fbe387811b7a13f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::AttackItem</scope><name>WorldObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

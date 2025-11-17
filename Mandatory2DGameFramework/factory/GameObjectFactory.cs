@@ -1,5 +1,8 @@
 ﻿using Mandatory2DGameFramework.logger;
 using Mandatory2DGameFramework.model.Creatures;
+using Mandatory2DGameFramework.model.defence;
+using Mandatory2DGameFramework.model.wall;
+using Mandatory2DGameFramework.worlds;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +11,30 @@ using System.Threading.Tasks;
 
 namespace Mandatory2DGameFramework.factory
 {
-    public abstract class GameObjectFactory
+    public static class GameObjectFactory
     {
-        public static Creature CreateWarrior(ILogger? logger = null)
+        public enum CreatureType
         {
-            logger.LogInfo("Creating Warrior Creature");
-            return new Warrior
+            Hunter,
+            Warrior
+        }
+        public static WorldObject CreateWall(int y, int x) => new Wall(y, x);
+        public static DefenceItem CreateDefence(string name, int reduce) =>
+            new DefenceItem { Name = name, ReduceHitPoint = reduce };
+        public static Creature CreateCreature(
+        CreatureType type,
+        string name,
+        int posX,
+        int posY,
+        ILogger? logger = null)
+        {
+            return type switch
             {
-                Name = "Warrior",
-                HitPoints = 150,
-                AttackPower = 25,
-                Defense = 15,
-                Speed = 10
+                CreatureType.Hunter => new Hunter(name, posX, posY, logger),
+                CreatureType.Warrior => new Warrior(name, posX, posY, logger),
+
+                _ => throw new ArgumentOutOfRangeException(nameof(type),
+                    $"Unsupported creature type: {type}")
             };
         }
     }

@@ -1,173 +1,159 @@
 ﻿using Mandatory2DGameFramework.logger;
 using Mandatory2DGameFramework.model.attack;
 using Mandatory2DGameFramework.model.defence;
-using Mandatory2DGameFramework.model.strategy;
+using Mandatory2DGameFramework.model.components;
 using Mandatory2DGameFramework.worlds;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Mandatory2DGameFramework.model.Creatures
 {
-    /// <summary>
-    /// Abstract base class for all creatures in the game world.
-    /// Implements Template, Observer, and Damage Strategy patterns.
-    /// </summary>
-    public abstract class Creature
+    public abstract class Creature : ICreature
     {
+        /// <summary>
+        /// Abstract base class representing a creature in the game world.
+        /// A creature can attack, receive damage and loot objects.
+        /// Implements the Observer pattern to notify subscribers when hit.
+        /// </summary>
         private readonly ILogger? _logger;
-        private readonly List<ICreatureObserver> _observers = new List<ICreatureObserver>();
+        private readonly List<ICreatureObserver> _observers = new();
 
-        public string Name { get; set; }
-        public int HitPoint { get; set; }
-        public bool IsAlive { get; set; }
-        public int MoveRange { get; set; }
+        /// <summary>
+        /// Creature's name.
+        /// </summary>
+        public string Name { get; protected set; }
 
+        /// <summary>
+        /// Current hit points of the creature.
+        /// </summary>
+        protected int HitPoint { get; set; }
+
+        /// <summary>
+        /// Indicates if the creature is alive.
+        /// </summary>
+        protected bool IsAlive { get; set; } = true;
+
+        /// <summary>
+        /// How far the creature can move per turn. (movement not really implemented)
+        /// </summary>
+        public int MoveRange { get; protected set; }
+
+
+        /// <summary>
+        /// X-coordinate in the world.
+        /// </summary>
         public int PosX { get; set; }
+
+        /// <summary>
+        /// Y-coordinate in the world.
+        /// </summary>
         public int PosY { get; set; }
 
-        public AttackItem? AttackWeapon { get; set; }
-        public DefenceComposite DefenceItems { get; set; }
 
-        public IDamageStrategy? DamageStrategy { get; set; }
+        /// <summary>
+        /// Component handling combat logic (attacks and receiving damage).
+        /// </summary>
+        public CombatComponent Combat { get; }
 
-        public const int MaxDefenceItems = 3;
+        /// <summary>
+        /// Component handling inventory (weapons, defence items, looting).
+        /// </summary>
+        public InventoryComponent Inventory { get; }
 
+        /// <summary>
+        /// Constructor for Creature.
+        /// </summary>
+        /// <param name="logger">Optional logger</param>
         protected Creature(ILogger? logger = null)
         {
-            Name = string.Empty;
-            HitPoint = 100;
-            IsAlive = true;
             _logger = logger;
-            AttackWeapon = null;
-            DefenceItems = new DefenceComposite();
+            Combat = new CombatComponent(this, logger);
+            Inventory = new InventoryComponent(this, logger);
         }
 
-        #region Observer Pattern
+        /// <summary>
+        /// Attaches an observer to the creature to receive hit notifications.
+        /// </summary>
+        /// <param name="observer">Observer to attach</param>
+        public void Attach(ICreatureObserver observer) => _observers.Add(observer);
+        /// <summary>
+        /// Detaches an observer from the creature.
+        /// </summary>
+        /// <param name="observer">Observer to detach</param>
 
-        public void Attach(ICreatureObserver observer)
+        public void Detach(ICreatureObserver observer) => _observers.Remove(observer);
+
+        /// <summary>
+        /// Notifies all attached observers about a hit event.
+        /// </summary>
+        /// <param name="e">Event argurments</param>
+        internal void NotifyObservers(CreatureHitEventArgs e)
         {
-            if (observer == null) throw new ArgumentNullException(nameof(observer));
-            if (!_observers.Contains(observer))
-                _observers.Add(observer);
+            foreach (var obs in _observers) obs.OnCreatureHit(this, e);
         }
 
-        public void Detach(ICreatureObserver observer)
+
+        /// <summary>
+        /// Gets the current hit points of the creature.
+        /// </summary>
+        /// <returns>Current creature hitpoints</returns>
+        public int GetCurrentHitPoints() => HitPoint;
+
+        /// <summary>
+        /// Gets whether the creature is alive.
+        /// </summary>
+        /// <returns>IsAlive = true or false</returns>
+        public bool GetIsAlive() => IsAlive;
+
+        /// <summary>
+        /// Adjusts the hit points of the creature by the specified delta.
+        /// </summary>
+        /// <param name="delta">The amount of hitpoints to adjust by</param>
+        internal void AdjustHitPoints(int delta)
         {
-            _observers.Remove(observer);
-        }
+            if (!IsAlive) return;
 
-        protected void NotifyObservers(CreatureHitEventArgs e)
-        {
-            foreach (var observer in _observers)
-                observer.OnCreatureHit(this, e);
-        }
+            int previous = HitPoint;
+            HitPoint = System.Math.Max(0, HitPoint + delta);
 
-        #endregion
-
-        #region Template Method Pattern
-
-        public void PerformAttack(Creature target)
-        {
-            if (!CanAttack(target))
-            {
-                _logger?.LogWarning($"{Name} cannot attack {target.Name}");
-                return;
-            }
-
-            BeforeAttack();
-
-            int damage = DamageStrategy != null ? DamageStrategy.CalculateDamage(this, target) : Hit();
-            target.ReceiveHit(damage);
-
-            AfterAttack(target, damage);
-        }
-
-        protected virtual bool CanAttack(Creature target) => IsAlive && target.IsAlive;
-
-        protected virtual void BeforeAttack() => _logger?.LogInfo($"{Name} prepares to attack.");
-
-        protected virtual void AfterAttack(Creature target, int damage)
-            => _logger?.LogInfo($"{Name} dealt {damage} damage to {target.Name}.");
-
-        #endregion
-
-        public int Hit() => AttackWeapon?.Hit ?? 1;
-
-        public void ReceiveHit(int hit)
-        {
-            if (!IsAlive)
-            {
-                _logger?.LogWarning($"{Name} is already dead and cannot receive more hits.");
-                return;
-            }
-
-            int totalDefence = DefenceItems.ReduceHitPoint;
-            int reducedHit = Math.Max(0, hit - totalDefence);
-
-            int previousHP = HitPoint;
-            HitPoint -= reducedHit;
+            if (HitPoint == 0) IsAlive = false;
 
             NotifyObservers(new CreatureHitEventArgs
             {
-                DamageReceived = reducedHit,
-                PreviousHitPoints = previousHP,
+                DamageReceived = -delta,
+                PreviousHitPoints = previous,
                 CurrentHitPoints = HitPoint,
-                IsDead = HitPoint <= 0
+                IsDead = !IsAlive
             });
 
-            _logger?.LogInfo($"{Name} received hit of {reducedHit} points (reduced from {hit} by {totalDefence}).");
-
-            if (HitPoint <= 0)
-            {
-                HitPoint = 0;
-                IsAlive = false;
+            if (!IsAlive)
                 _logger?.LogInfo($"{Name} has died.");
-            }
         }
 
-        public void Loot(WorldObject obj)
-        {
-            if (!obj.Lootable)
-            {
-                _logger?.LogWarning($"{Name} tried to loot {obj.Name}, but it is not lootable.");
-                return;
-            }
+        /// <summary>
+        /// Performs an attack on the target creature.
+        /// </summary>
+        /// <param name="target"></param>
+        public void PerformAttack(Creature target) => Combat.Attack(target);
+        /// <summary>
+        /// Receives a hit with the specified damage.
+        /// </summary>
+        /// <param name="damage"></param>
+        public void ReceiveHit(int damage) => Combat.ReceiveHit(damage);
 
-            if (obj is AttackItem attackItem)
-            {
-                if (AttackWeapon != null)
-                    _logger?.LogInfo($"{Name} replaced weapon '{AttackWeapon.Name}' with '{attackItem.Name}'.");
-                else
-                    _logger?.LogInfo($"{Name} equipped weapon: {attackItem.Name}.");
+        /// <summary>
+        /// Loots the specified world object.
+        /// </summary>
+        /// <param name="obj"></param>
+        public void Loot(WorldObject obj) => Inventory.Loot(obj);
 
-                AttackWeapon = attackItem;
-            }
-            else if (obj is DefenceItem defenceItem)
-            {
-                if (DefenceItems.Items.Count >= MaxDefenceItems)
-                {
-                    _logger?.LogWarning($"{Name} cannot carry more defence items (max {MaxDefenceItems}).");
-                    return;
-                }
-
-                DefenceItems.Add(defenceItem);
-                _logger?.LogInfo($"{Name} equipped defence item: {defenceItem.Name} (Total defence: {DefenceItems.ReduceHitPoint}).");
-            }
-            else
-            {
-                _logger?.LogWarning($"{Name} tried to loot {obj.Name}, but it is neither an attack nor a defence item.");
-            }
-        }
-
+        /// <summary>
+        /// Returns a string representation of the creature.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            string weaponInfo = AttackWeapon != null ? AttackWeapon.Name : "None (bare hands)";
-            int totalDefence = DefenceItems.ReduceHitPoint;
-
-            return $"{Name} - HP: {HitPoint}, Position: ({PosX},{PosY}), " +
-                   $"Weapon: {weaponInfo}, Defence: {DefenceItems.Items.Count}/{MaxDefenceItems} (Total: {totalDefence}), " +
-                   $"Status: {(IsAlive ? "Alive" : "Dead")}";
+            return $"{Name} - HP: {HitPoint}, Pos: ({PosX},{PosY}), Weapon: {Inventory.EquippedWeapon?.Name ?? "None"}, " +
+                   $"Defence: {Inventory.Defence.ReduceHitPoint}, Status: {(IsAlive ? "Alive" : "Dead")}";
         }
     }
 }

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::wall::Wall</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" prot="public" virt="non-virtual">Mandatory2DGameFramework.worlds.WorldObject</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall_1a70eeedd9d463a2b051a2cbcbcb6a13ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.wall.Wall.Wall</definition>
+        <argsstring>(int y, int x)</argsstring>
+        <name>Wall</name>
+        <qualifiedname>Mandatory2DGameFramework.model.wall.Wall.Wall</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall/Wall.cs" line="12" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall/Wall.cs" bodystart="12" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.wall.Wall</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.wall.Wall</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.worlds.WorldObject</label>
+        <link refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall/Wall.cs" line="10" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall/Wall.cs" bodystart="11" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a5f2e01a7c9176b71b41c81c9e76135c8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>Lootable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a22287e4da7ba3627ce0a41cf10dc4a2c" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f0369090bb647e08721f019f1ab54ed" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>posX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8e02ad604695417f0312e26982549ef9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>posY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1abca7cfd24dc84cd0a7ba83538abfc888" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>Removeable</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a8f6d24976133e2cff6bdbe69e75a29e6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>ToString</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall_1a70eeedd9d463a2b051a2cbcbcb6a13ab" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>Wall</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object_1a36701698b4ac1503dca8f4a57dc7cfc7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::wall::Wall</scope><name>WorldObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

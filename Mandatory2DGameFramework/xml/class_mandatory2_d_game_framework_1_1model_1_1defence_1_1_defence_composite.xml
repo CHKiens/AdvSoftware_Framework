@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::defence::DefenceComposite</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a66a39d2a2f3bc6a90dcca37b6921037d" prot="private" static="no" mutable="no">
+        <type>readonly List&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> &gt;</type>
+        <definition>readonly List&lt;DefenceItem&gt; Mandatory2DGameFramework.model.defence.DefenceComposite._items</definition>
+        <argsstring></argsstring>
+        <name>_items</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite._items</qualifiedname>
+        <initializer>= new()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="13" column="31" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1aa4dbeb8e528454958ef3af44ebc62fb2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>IReadOnlyList&lt; <ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref> &gt;</type>
+        <definition>IReadOnlyList&lt;DefenceItem&gt; Mandatory2DGameFramework.model.defence.DefenceComposite.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.Items</qualifiedname>
+        <briefdescription>
+<para>Exposes all items in read-only mode. External code cannot modify the list directly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="19" column="30" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a3dd4a60acb7e3d07a25548ad5cb208f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.defence.DefenceComposite.ReduceHitPoint</definition>
+        <argsstring></argsstring>
+        <name>ReduceHitPoint</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.ReduceHitPoint</qualifiedname>
+        <briefdescription>
+<para>Calculates total damage reduction from all items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="41" column="20" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1afdd3391d09285496d2f21ed9f06aaa43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.defence.DefenceComposite.Add</definition>
+        <argsstring>(DefenceItem item)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.Add</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref></type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Add a defensive item to the composite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="24" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a11c9d33f527c302bfa9ec427716e9ccf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.defence.DefenceComposite.Remove</definition>
+        <argsstring>(DefenceItem item)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.Remove</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref></type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+<para>Remove a defensive item from the composite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="33" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a6d5f1f8df76d4358d3f055c6bec3ff0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Mandatory2DGameFramework.model.defence.DefenceComposite.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="58" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="58" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a61b8f0a53d0344a026f2c479acfe13ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kindref="compound">DefenceComposite</ref></type>
+        <definition>static DefenceComposite Mandatory2DGameFramework.model.defence.DefenceComposite.operator+</definition>
+        <argsstring>(DefenceComposite a, DefenceComposite b)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.DefenceComposite.operator+</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kindref="compound">DefenceComposite</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite" kindref="compound">DefenceComposite</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Combine two DefenceComposites into one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="46" column="40" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="46" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Composite for combining multiple DefenceItems. Supports operator overload for easy merging. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" line="11" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/DefenceComposite.cs" bodystart="12" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a66a39d2a2f3bc6a90dcca37b6921037d" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>_items</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1afdd3391d09285496d2f21ed9f06aaa43" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>Add</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1aa4dbeb8e528454958ef3af44ebc62fb2" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>Items</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a61b8f0a53d0344a026f2c479acfe13ac" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>operator+</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a3dd4a60acb7e3d07a25548ad5cb208f8" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>ReduceHitPoint</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a11c9d33f527c302bfa9ec427716e9ccf" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>Remove</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_composite_1a6d5f1f8df76d4358d3f055c6bec3ff0a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::DefenceComposite</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

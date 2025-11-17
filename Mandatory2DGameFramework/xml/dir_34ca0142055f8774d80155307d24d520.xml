@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_34ca0142055f8774d80155307d24d520" kind="dir">
+    <compoundname>C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures</compoundname>
+    <innerfile refid="_creature_8cs">Creature.cs</innerfile>
+    <innerfile refid="_creature_hit_event_args_8cs">CreatureHitEventArgs.cs</innerfile>
+    <innerfile refid="_hunter_8cs">Hunter.cs</innerfile>
+    <innerfile refid="_i_creature_8cs">ICreature.cs</innerfile>
+    <innerfile refid="_i_creature_observer_8cs">ICreatureObserver.cs</innerfile>
+    <innerfile refid="_warrior_8cs">Warrior.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/"/>
+  </compounddef>
+</doxygen>

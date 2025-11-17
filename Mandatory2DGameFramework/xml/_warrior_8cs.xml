@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_warrior_8cs" kind="file" language="C#">
+    <compoundname>Warrior.cs</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_warrior" prot="public">Mandatory2DGameFramework::model::Creatures::Warrior</innerclass>
+    <innernamespace refid="namespace_mandatory2_d_game_framework">Mandatory2DGameFramework</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model">Mandatory2DGameFramework::model</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1_creatures">Mandatory2DGameFramework::model::Creatures</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">Mandatory2DGameFramework.logger</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1attack" kindref="compound">Mandatory2DGameFramework.model.attack</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1defence" kindref="compound">Mandatory2DGameFramework.model.defence</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy" kindref="compound">Mandatory2DGameFramework.model.strategy</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1worlds" kindref="compound">Mandatory2DGameFramework.worlds</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1_creatures" kindref="compound">Mandatory2DGameFramework.model.Creatures</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_warrior" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Warrior<sp/>:<sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a2c69e9e641cfef176f79f5a9592cd0f1" kindref="member">Creature</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Warrior(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>posY,<sp/><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?<sp/><ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">logger</ref><sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>base(<ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">logger</ref>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0" kindref="member">Name</ref><sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a56e83a2b515348d4f22694de7ede0d71" kindref="member">PosX</ref><sp/>=<sp/>posX;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a09d99023b4df8c89b5fe66d6346ca4f6" kindref="member">PosY</ref><sp/>=<sp/>posY;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a9155a6f10739249a394e6aaeef622494" kindref="member">HitPoint</ref><sp/>=<sp/>150;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1add39c38e08c0eb69424e78cb36e77478" kindref="member">MoveRange</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Combat.DamageStrategy<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_armor_pen_damage_strategy" kindref="compound">ArmorPenDamageStrategy</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" kindref="member">Inventory</ref>.Loot(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1attack_1_1_attack_item" kindref="compound">AttackItem</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0" kindref="member">Name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Sword&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Hit<sp/>=<sp/>20,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Range<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Warrior.cs"/>
+  </compounddef>
+</doxygen>

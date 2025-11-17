@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::factory::GameObjectFactory</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a7abb6b8b9cc415666f1ca322e6cbc0e9" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>CreatureType</name>
+        <qualifiedname>Mandatory2DGameFramework.factory.GameObjectFactory.CreatureType</qualifiedname>
+        <enumvalue id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a7abb6b8b9cc415666f1ca322e6cbc0e9a5e409e09f43d85c6e61301149e4f803b" prot="public">
+          <name>Hunter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a7abb6b8b9cc415666f1ca322e6cbc0e9a7ee7fa010d64b90a36803a8445f2e943" prot="public">
+          <name>Warrior</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" line="16" column="15" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a4754e6e28bad10c0030025279586a973" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1worlds_1_1_world_object" kindref="compound">WorldObject</ref></type>
+        <definition>static WorldObject Mandatory2DGameFramework.factory.GameObjectFactory.CreateWall</definition>
+        <argsstring>(int y, int x)</argsstring>
+        <name>CreateWall</name>
+        <qualifiedname>Mandatory2DGameFramework.factory.GameObjectFactory.CreateWall</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" line="21" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a0f3dccc3c68717830b78d56a057a4120" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1defence_1_1_defence_item" kindref="compound">DefenceItem</ref></type>
+        <definition>static DefenceItem Mandatory2DGameFramework.factory.GameObjectFactory.CreateDefence</definition>
+        <argsstring>(string name, int reduce)</argsstring>
+        <name>CreateDefence</name>
+        <qualifiedname>Mandatory2DGameFramework.factory.GameObjectFactory.CreateDefence</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" line="22" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1afcd28ab70f9732caa8ae8dad340db1db" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+        <definition>static Creature Mandatory2DGameFramework.factory.GameObjectFactory.CreateCreature</definition>
+        <argsstring>(CreatureType type, string name, int posX, int posY, ILogger? logger=null)</argsstring>
+        <name>CreateCreature</name>
+        <qualifiedname>Mandatory2DGameFramework.factory.GameObjectFactory.CreateCreature</qualifiedname>
+        <param>
+          <type>CreatureType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?</type>
+          <declname>logger</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" line="24" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" bodystart="24" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" line="14" column="19" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/factory/GameObjectFactory.cs" bodystart="15" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1afcd28ab70f9732caa8ae8dad340db1db" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::factory::GameObjectFactory</scope><name>CreateCreature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a0f3dccc3c68717830b78d56a057a4120" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::factory::GameObjectFactory</scope><name>CreateDefence</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a4754e6e28bad10c0030025279586a973" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::factory::GameObjectFactory</scope><name>CreateWall</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1factory_1_1_game_object_factory_1a7abb6b8b9cc415666f1ca322e6cbc0e9" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::factory::GameObjectFactory</scope><name>CreatureType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

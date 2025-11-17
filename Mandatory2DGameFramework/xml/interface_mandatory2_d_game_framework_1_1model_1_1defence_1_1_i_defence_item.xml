@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::defence::IDefenceItem</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1a8f26d09268f7f1093a88235f42c2f1e7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.model.defence.IDefenceItem.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.IDefenceItem.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" line="11" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1aba1db34645b46298dfbf9b0a722747cc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.defence.IDefenceItem.ReduceHitPoint</definition>
+        <argsstring></argsstring>
+        <name>ReduceHitPoint</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.IDefenceItem.ReduceHitPoint</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" line="12" column="13" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1a3c3b29a7c441df2b00f5fb408f2d6fef" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Mandatory2DGameFramework.model.defence.IDefenceItem.Lootable</definition>
+        <argsstring></argsstring>
+        <name>Lootable</name>
+        <qualifiedname>Mandatory2DGameFramework.model.defence.IDefenceItem.Lootable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" line="13" column="14" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" line="9" column="22" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence/IDefenceItem.cs" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1a3c3b29a7c441df2b00f5fb408f2d6fef" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::IDefenceItem</scope><name>Lootable</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1a8f26d09268f7f1093a88235f42c2f1e7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::IDefenceItem</scope><name>Name</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1defence_1_1_i_defence_item_1aba1db34645b46298dfbf9b0a722747cc" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::defence::IDefenceItem</scope><name>ReduceHitPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

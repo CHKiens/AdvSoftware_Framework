@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="_combat_component_8cs" kind="file" language="C#">
+    <compoundname>CombatComponent.cs</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component" prot="public">Mandatory2DGameFramework::model::components::CombatComponent</innerclass>
+    <innernamespace refid="namespace_mandatory2_d_game_framework">Mandatory2DGameFramework</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model">Mandatory2DGameFramework::model</innernamespace>
+    <innernamespace refid="namespace_mandatory2_d_game_framework_1_1model_1_1components">Mandatory2DGameFramework::model::components</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">Mandatory2DGameFramework.logger</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1_creatures" kindref="compound">Mandatory2DGameFramework.model.Creatures</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1strategy" kindref="compound">Mandatory2DGameFramework.model.strategy</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="namespace_mandatory2_d_game_framework_1_1model_1_1components" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_mandatory2_d_game_framework_1_1model_1_1components" kindref="compound">Mandatory2DGameFramework.model.components</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a661127ab1933ce71897536cfc801d138" kindref="member">CombatComponent</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref><sp/>_owner;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?<sp/>_logger;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy" kindref="compound">IDamageStrategy</ref>?<sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a8efe47a86e8933825995dc2776ccc5c5" kindref="member">DamageStrategy</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a661127ab1933ce71897536cfc801d138" kindref="member">CombatComponent</ref>(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref><sp/>owner,<sp/><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?<sp/><ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">logger</ref><sp/>=<sp/></highlight><highlight class="keyword">null</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_owner<sp/>=<sp/>owner;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger<sp/>=<sp/><ref refid="namespace_mandatory2_d_game_framework_1_1logger" kindref="compound">logger</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1acab702c584391fa2c0566873207c2124" kindref="member">Attack</ref>(<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref><sp/>target)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_owner.GetIsAlive()<sp/>||<sp/>!target.<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1af4855a1faf0bce7e30c87580207874cf" kindref="member">GetIsAlive</ref>())</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger?.LogWarning($</highlight><highlight class="stringliteral">&quot;{_owner.Name}<sp/>cannot<sp/>attack<sp/>{target.Name}&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage<sp/>=<sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a8efe47a86e8933825995dc2776ccc5c5" kindref="member">DamageStrategy</ref>?.CalculateDamage(_owner,<sp/>target)<sp/>??<sp/>(_owner.Inventory.EquippedWeapon?.Hit<sp/>??<sp/>1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.<ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a98466b10649ea373e391de8ddba81ca7" kindref="member">ReceiveHit</ref>(damage);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger?.LogInfo($</highlight><highlight class="stringliteral">&quot;{_owner.Name}<sp/>attacked<sp/>{target.Name}<sp/>for<sp/>{damage}<sp/>damage.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a69045d622ee6550250bd2acf1668e97f" kindref="member">ReceiveHit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hit)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>totalDefence<sp/>=<sp/>_owner.Inventory.Defence.ReduceHitPoint;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reducedHit<sp/>=<sp/>System.Math.Max(0,<sp/>hit<sp/>-<sp/>totalDefence);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_owner.AdjustHitPoints(-reducedHit);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger?.LogInfo($</highlight><highlight class="stringliteral">&quot;{_owner.Name}<sp/>received<sp/>{reducedHit}<sp/>damage<sp/>(after<sp/>{totalDefence}<sp/>defence).&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs"/>
+  </compounddef>
+</doxygen>

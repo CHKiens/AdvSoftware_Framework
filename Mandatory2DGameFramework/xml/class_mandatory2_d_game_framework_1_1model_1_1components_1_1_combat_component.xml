@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::components::CombatComponent</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a9778074a3a4c49aade49978ce8147f01" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+        <definition>readonly Creature Mandatory2DGameFramework.model.components.CombatComponent._owner</definition>
+        <argsstring></argsstring>
+        <name>_owner</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent._owner</qualifiedname>
+        <briefdescription>
+<para>Handles all combat-related operations for a creature. Supports attack strategies and receiving damage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="13" column="35" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a34be620a1d559810d26967e95659e80e" prot="private" static="no" mutable="no">
+        <type>readonly? <ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref></type>
+        <definition>readonly? ILogger Mandatory2DGameFramework.model.components.CombatComponent._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="14" column="34" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a8efe47a86e8933825995dc2776ccc5c5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="interface_mandatory2_d_game_framework_1_1model_1_1strategy_1_1_i_damage_strategy" kindref="compound">IDamageStrategy</ref>?</type>
+        <definition>IDamageStrategy? Mandatory2DGameFramework.model.components.CombatComponent.DamageStrategy</definition>
+        <argsstring></argsstring>
+        <name>DamageStrategy</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent.DamageStrategy</qualifiedname>
+        <briefdescription>
+<para>Strategy used to calculate damage during attacks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="19" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a661127ab1933ce71897536cfc801d138" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.components.CombatComponent.CombatComponent</definition>
+        <argsstring>(Creature owner, ILogger? logger=null)</argsstring>
+        <name>CombatComponent</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent.CombatComponent</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?</type>
+          <declname>logger</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component" kindref="compound">CombatComponent</ref>. Takes the owning creature and an optional logger. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="26" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1acab702c584391fa2c0566873207c2124" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.components.CombatComponent.Attack</definition>
+        <argsstring>(Creature target)</argsstring>
+        <name>Attack</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent.Attack</qualifiedname>
+        <param>
+          <type><ref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" kindref="compound">Creature</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Attacks a target creature, applying damage based on the damage strategy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target creature</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="36" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="36" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a69045d622ee6550250bd2acf1668e97f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.model.components.CombatComponent.ReceiveHit</definition>
+        <argsstring>(int hit)</argsstring>
+        <name>ReceiveHit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.components.CombatComponent.ReceiveHit</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>hit</declname>
+        </param>
+        <briefdescription>
+<para>Receives a hit, reducing hit points based on defence items. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Incoming damage</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="54" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="54" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" line="7" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components/CombatComponent.cs" bodystart="8" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a34be620a1d559810d26967e95659e80e" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>_logger</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a9778074a3a4c49aade49978ce8147f01" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>_owner</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1acab702c584391fa2c0566873207c2124" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>Attack</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a661127ab1933ce71897536cfc801d138" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>CombatComponent</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a8efe47a86e8933825995dc2776ccc5c5" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>DamageStrategy</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1components_1_1_combat_component_1a69045d622ee6550250bd2acf1668e97f" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::components::CombatComponent</scope><name>ReceiveHit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

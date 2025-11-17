@@ -8,22 +8,23 @@ namespace Mandatory2DGameFramework.model.Creatures
 {
     public class Warrior : Creature
     {
-        public Warrior(string name, int posX, int posY, ILogger? logger = null) : base(logger)
+        public Warrior(string name, int posX, int posY, ILogger? logger = null)
+            : base(logger)
         {
             Name = name;
-            HitPoint = 150;
-            MoveRange = 2;
-            DamageStrategy = new ArmorPenDamageStrategy();
             PosX = posX;
             PosY = posY;
+            HitPoint = 150;
+            MoveRange = 2;
 
-            // Equip default attack weapon
-            AttackWeapon = new AttackItem
+            Combat.DamageStrategy = new ArmorPenDamageStrategy();
+
+            Inventory.Loot(new AttackItem
             {
                 Name = "Sword",
-                Hit = 15,
+                Hit = 20,
                 Range = 1
-            };
+            });
         }
     }
 

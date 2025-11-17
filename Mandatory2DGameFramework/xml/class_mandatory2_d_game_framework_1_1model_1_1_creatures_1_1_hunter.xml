@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter" kind="class" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::Creatures::Hunter</compoundname>
+    <basecompoundref refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature" prot="public" virt="non-virtual">Mandatory2DGameFramework.model.Creatures.Creature</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter_1a4e78c2642637875f9d7ad7d10fda27dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.model.Creatures.Hunter.Hunter</definition>
+        <argsstring>(string name, int posX, int posY, ILogger? logger=null)</argsstring>
+        <name>Hunter</name>
+        <qualifiedname>Mandatory2DGameFramework.model.Creatures.Hunter.Hunter</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>posY</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" kindref="compound">ILogger</ref>?</type>
+          <declname>logger</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Hunter.cs" line="9" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Hunter.cs" bodystart="9" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.Creatures.Hunter</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.Creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.Creatures.ICreature</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.model.Creatures.Hunter</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.model.Creatures.Creature</label>
+        <link refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Mandatory2DGameFramework.model.Creatures.ICreature</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_i_creature"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Hunter.cs" line="7" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures/Hunter.cs" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a3b7219073f795f12e8ae5af173567f66" prot="package" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>AdjustHitPoints</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ae542a025f21adc870a33a11849067699" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Attach</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ace944c56499bb397677cfd2c530d4aa7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Combat</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a2c69e9e641cfef176f79f5a9592cd0f1" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Creature</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a8a18342162b892b51449f6028cdd7ec6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Detach</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a7817576b589ac5f095995c23ca0e860a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>GetCurrentHitPoints</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1af4855a1faf0bce7e30c87580207874cf" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>GetIsAlive</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a9155a6f10739249a394e6aaeef622494" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>HitPoint</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_hunter_1a4e78c2642637875f9d7ad7d10fda27dd" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Hunter</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a6d5a3ac1a7a5e9932e60e71518cd320d" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Inventory</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ab08f108166082081801976a072fbe306" prot="protected" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>IsAlive</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a47e1a4402967f3116f3cae07d6beb9d0" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Loot</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1add39c38e08c0eb69424e78cb36e77478" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>MoveRange</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a1e56a1e544497505b38952a4ded40ad0" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>Name</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1ad8d417c0fbb21894991893fff266b1fb" prot="package" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>NotifyObservers</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1acb636a7ca612b5ad53ee333f99b6d646" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>PerformAttack</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a56e83a2b515348d4f22694de7ede0d71" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>PosX</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a09d99023b4df8c89b5fe66d6346ca4f6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>PosY</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a98466b10649ea373e391de8ddba81ca7" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>ReceiveHit</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1model_1_1_creatures_1_1_creature_1a45be34786ef3833ecafe9f62d2066fd6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::Creatures::Hunter</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

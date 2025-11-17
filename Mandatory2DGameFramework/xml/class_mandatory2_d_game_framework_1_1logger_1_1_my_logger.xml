@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Mandatory2DGameFramework::logger::MyLogger</compoundname>
+    <basecompoundref refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger" prot="public" virt="non-virtual">Mandatory2DGameFramework.logger.ILogger</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a013ba4f3b20403b63890219291c32921" prot="private" static="yes" mutable="no">
+        <type>readonly MyLogger</type>
+        <definition>readonly MyLogger Mandatory2DGameFramework.logger.MyLogger.instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.instance</qualifiedname>
+        <initializer>= new MyLogger()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="12" column="42" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1abc09cc258d24fa2c411294af72b4ce29" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>MyLogger</type>
+        <definition>MyLogger Mandatory2DGameFramework.logger.MyLogger.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.Instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="13" column="32" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a30d1cea79600fb334b5fa87fe0948575" prot="private" static="no" mutable="no">
+        <type>TraceSource</type>
+        <definition>TraceSource Mandatory2DGameFramework.logger.MyLogger.ts</definition>
+        <argsstring></argsstring>
+        <name>ts</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.ts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="14" column="29" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a540e126941861cf2e6fdad966e89a62f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Mandatory2DGameFramework.logger.MyLogger.MyLogger</definition>
+        <argsstring>()</argsstring>
+        <name>MyLogger</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.MyLogger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="15" column="17" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1aeee0270d9161d6fcdbca3160ebd96111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.LogInfo</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogInfo</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.LogInfo</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger_1a1ba694b3896b14c7d953534eea85b0b7">LogInfo</reimplements>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="21" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a0b1375e23dd580da8df76cbb83a00c54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.LogWarning</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogWarning</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.LogWarning</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger_1a75ff5614380cbea0267e1e19152f8118">LogWarning</reimplements>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="27" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a829633ba362bf6d4626cc9f0b42c912a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.LogError</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogError</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.LogError</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger_1a46076ef04020977cc320db3544166457">LogError</reimplements>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="33" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a56a577aea9ea696d26d201f5b79e73c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.LogCritical</definition>
+        <argsstring>(string message)</argsstring>
+        <name>LogCritical</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.LogCritical</qualifiedname>
+        <reimplements refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger_1a2edccdaf8d9c2ce92b71f20a846df700">LogCritical</reimplements>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="39" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1ac4e2fe3b4075a10c692b2a503501e2d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.AddListener</definition>
+        <argsstring>(TraceListener listener)</argsstring>
+        <name>AddListener</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.AddListener</qualifiedname>
+        <param>
+          <type>TraceListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="47" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a2161effe6b520c8dd66c3de695f4411a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Mandatory2DGameFramework.logger.MyLogger.RemoveListener</definition>
+        <argsstring>(TraceListener listener)</argsstring>
+        <name>RemoveListener</name>
+        <qualifiedname>Mandatory2DGameFramework.logger.MyLogger.RemoveListener</qualifiedname>
+        <param>
+          <type>TraceListener</type>
+          <declname>listener</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="52" column="21" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="52" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.logger.MyLogger</label>
+        <link refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.logger.ILogger</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Mandatory2DGameFramework.logger.MyLogger</label>
+        <link refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Mandatory2DGameFramework.logger.ILogger</label>
+        <link refid="interface_mandatory2_d_game_framework_1_1logger_1_1_i_logger"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" line="10" column="11" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/logger/MyLogger.cs" bodystart="11" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1ac4e2fe3b4075a10c692b2a503501e2d6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>AddListener</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1abc09cc258d24fa2c411294af72b4ce29" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>Instance</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a013ba4f3b20403b63890219291c32921" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>instance</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a56a577aea9ea696d26d201f5b79e73c6" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>LogCritical</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a829633ba362bf6d4626cc9f0b42c912a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>LogError</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1aeee0270d9161d6fcdbca3160ebd96111" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>LogInfo</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a0b1375e23dd580da8df76cbb83a00c54" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>LogWarning</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a540e126941861cf2e6fdad966e89a62f" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>MyLogger</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a2161effe6b520c8dd66c3de695f4411a" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>RemoveListener</name></member>
+      <member refid="class_mandatory2_d_game_framework_1_1logger_1_1_my_logger_1a30d1cea79600fb334b5fa87fe0948575" prot="private" virt="non-virtual"><scope>Mandatory2DGameFramework::logger::MyLogger</scope><name>ts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_4ab4cb7dc6ea997a6aeb591df2482733" kind="dir">
+    <compoundname>C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/obj/Debug/net8.0</compoundname>
+    <innerfile refid="_8_n_e_t_core_app_00_version_0av8_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_mandatory2_d_game_framework_8_assembly_info_8cs">Mandatory2DGameFramework.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_mandatory2_d_game_framework_8_global_usings_8g_8cs">Mandatory2DGameFramework.GlobalUsings.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/obj/Debug/net8.0/"/>
+  </compounddef>
+</doxygen>

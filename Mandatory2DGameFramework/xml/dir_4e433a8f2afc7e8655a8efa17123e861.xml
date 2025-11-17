@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_4e433a8f2afc7e8655a8efa17123e861" kind="dir">
+    <compoundname>C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy</compoundname>
+    <innerfile refid="_armor_pen_damage_strategy_8cs">ArmorPenDamageStrategy.cs</innerfile>
+    <innerfile refid="_crit_damage_strategy_8cs">CritDamageStrategy.cs</innerfile>
+    <innerfile refid="_i_damage_strategy_8cs">IDamageStrategy.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item" kind="interface" language="C#" prot="public">
+    <compoundname>Mandatory2DGameFramework::model::attack::IAttackItem</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1a64f80af65a5b3b5aa4bac5e0d8186336" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Mandatory2DGameFramework.model.attack.IAttackItem.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.IAttackItem.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" line="11" column="16" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1aca7c11bfecebad018b9293f8f52ed342" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.attack.IAttackItem.Hit</definition>
+        <argsstring></argsstring>
+        <name>Hit</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.IAttackItem.Hit</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" line="12" column="13" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1a83318442d793b6d94f8e1803be4dcfa4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Mandatory2DGameFramework.model.attack.IAttackItem.Range</definition>
+        <argsstring></argsstring>
+        <name>Range</name>
+        <qualifiedname>Mandatory2DGameFramework.model.attack.IAttackItem.Range</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" line="13" column="13" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" line="9" column="22" bodyfile="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack/IAttackItem.cs" bodystart="10" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1aca7c11bfecebad018b9293f8f52ed342" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::IAttackItem</scope><name>Hit</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1a64f80af65a5b3b5aa4bac5e0d8186336" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::IAttackItem</scope><name>Name</name></member>
+      <member refid="interface_mandatory2_d_game_framework_1_1model_1_1attack_1_1_i_attack_item_1a83318442d793b6d94f8e1803be4dcfa4" prot="public" virt="non-virtual"><scope>Mandatory2DGameFramework::model::attack::IAttackItem</scope><name>Range</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

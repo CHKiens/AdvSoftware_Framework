@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="dir_9f9645a87bf11c16a6f8ae8b535a7685" kind="dir">
+    <compoundname>C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model</compoundname>
+    <innerdir refid="dir_b22ea14a31286a55aad9727191d32cca">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/attack</innerdir>
+    <innerdir refid="dir_62becb081bde3d0fc7bcf5233cbd9fb5">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/components</innerdir>
+    <innerdir refid="dir_34ca0142055f8774d80155307d24d520">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/Creatures</innerdir>
+    <innerdir refid="dir_f18242f0b8fcf4bae7f54fff68b93d12">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/defence</innerdir>
+    <innerdir refid="dir_4e433a8f2afc7e8655a8efa17123e861">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/strategy</innerdir>
+    <innerdir refid="dir_9535507999b6d7e8c3440e0ad6b1a82d">C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/"/>
+  </compounddef>
+</doxygen>

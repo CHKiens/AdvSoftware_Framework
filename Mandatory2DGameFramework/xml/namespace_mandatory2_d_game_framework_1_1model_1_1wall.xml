@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.15.0" xml:lang="en-US">
+  <compounddef id="namespace_mandatory2_d_game_framework_1_1model_1_1wall" kind="namespace" language="C#">
+    <compoundname>Mandatory2DGameFramework::model::wall</compoundname>
+    <innerclass refid="class_mandatory2_d_game_framework_1_1model_1_1wall_1_1_wall" prot="public">Mandatory2DGameFramework::model::wall::Wall</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/caspe/Desktop/New folder (2)/Mandatory2DGameFramework/Mandatory2DGameFramework/model/wall/Wall.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>
